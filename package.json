@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.3"
   }
 }
