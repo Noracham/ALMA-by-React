@@ -45,6 +45,7 @@ export const CodeList = (props: any) => {
               language={lang} // 表示する言語
               style={okaidia}
               showLineNumbers // 行番号を表示
+              customStyle={{ fontSize: "16px" }}
             >
               {content}
             </SyntaxHighlighter>
