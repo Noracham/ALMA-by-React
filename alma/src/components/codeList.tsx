@@ -20,7 +20,7 @@ export const CodeList = (props: any) => {
   //       products.forEach((product) => {
   //         console.log(madeFromSoy(product));
   //       });`;
-  const { title, content } = props;
+  const { title, content, lang } = props;
   return (
     <>
       <Accordion allowToggle>
@@ -33,6 +33,7 @@ export const CodeList = (props: any) => {
                 as="span"
                 flex="1"
                 textAlign="left"
+                p={"7px 0"}
               >
                 {title}
               </Box>
@@ -41,7 +42,7 @@ export const CodeList = (props: any) => {
           </h2>
           <AccordionPanel pb={4}>
             <SyntaxHighlighter
-              language="html" // 表示する言語
+              language={lang} // 表示する言語
               style={okaidia}
               showLineNumbers // 行番号を表示
             >

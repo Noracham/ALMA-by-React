@@ -53,7 +53,7 @@ export default function Home() {
 
         <Box
           display={"flex"}
-          w={"80%"}
+          w={"60%"}
           m={"10% auto 0"}
           justifyContent={"space-around"}
         >
@@ -65,6 +65,7 @@ export default function Home() {
               fontWeight={"400"}
               w={"200px"}
               h={"70px"}
+              m={"0 2px"}
               fontSize={"30px"}
               _hover={{
                 color: "#000",
@@ -82,6 +83,7 @@ export default function Home() {
               fontWeight={"400"}
               w={"200px"}
               h={"70px"}
+              m={"0 2px"}
               fontSize={"30px"}
               _hover={{
                 color: "#000",
@@ -99,6 +101,7 @@ export default function Home() {
               fontWeight={"400"}
               w={"200px"}
               h={"70px"}
+              m={"0 2px"}
               fontSize={"30px"}
               _hover={{
                 color: "#000",
