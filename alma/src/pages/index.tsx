@@ -21,29 +21,35 @@ export default function Home() {
         <Box
           m={"5% 10%"}
           w={"80%"}
-          bg={"#e0e0e0"}
+          bg={"#fff"}
           fontFamily={"en-maru-gothic"}
           fontSize={"20px"}
           fontWeight={700}
+          borderRadius={"20px"}
+          p={"60px 40px"}
         >
-          <p>🚨 基本的には個人利用を目的としております。</p>
-          <p>👉 これよく使うなーというモノをメモ感覚でのせております。</p>
-          <p>
+          <Box>🚨 基本的には個人利用を目的としております。</Box>
+          <Box mt={"20px"}>
+            👉 これよく使うなーというモノをメモ感覚でのせております。
+          </Box>
+          <Box mt={"20px"}>
             👉
             利用したいタイトルをクリックすることでコード等が展開し、表示されます。
             <br />
-            コピー又はダウンロードの上ご利用ください。
-          </p>
-          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;コピー又はダウンロードの上ご利用ください。
+          </Box>
+          <Box mt={"20px"}>
             👉 コードにカーソルを合わせると右上にコピーボタンが表示されます。
-          </p>
-          <p>
+          </Box>
+          <Box mt={"20px"}>
             👉
             ツールをご利用の場合、参照先サイトの利用規約等をご理解の上でご利用ください。
-          </p>
-          <p>
-            どうでもいいですが<span>「ALMA」=「ALL MASTER」</span>です。
-          </p>
+          </Box>
+          <Box mt={"20px"} textAlign={"center"}>
+            どうでもいいですが
+            <span className={styles.strongtxt}>「ALMA」=「ALL MASTER」</span>
+            です。
+          </Box>
         </Box>
       </PageLayout>
     </>
