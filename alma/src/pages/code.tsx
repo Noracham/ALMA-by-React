@@ -67,6 +67,16 @@ const code = () => {
   }
 }`}
           />
+          <CodeList
+            lang="scss"
+            title="🌟 SCSS(Sass)mixinレスポンシブ書き方"
+            content={`//タブレット ※_mixin.scss必須
+@include m.mq(tab){
+}
+//スマホ　※_mixin.scss必須
+@include m.mq(sp){
+}`}
+          />
         </Box>
       </PageLayout>
     </>

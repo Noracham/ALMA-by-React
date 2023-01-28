@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import { Box, Button, Link } from "@chakra-ui/react";
 import { PageLayout } from "../components/PageLayout";
+import { LinkButton } from "../components/linkButtom";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -57,60 +58,9 @@ export default function Home() {
           m={"10% auto 0"}
           justifyContent={"space-around"}
         >
-          <Link href="code">
-            <Button
-              bg={"#000"}
-              color={"#fff"}
-              fontFamily={"bungee, sans-serif"}
-              fontWeight={"400"}
-              w={"200px"}
-              h={"70px"}
-              m={"0 2px"}
-              fontSize={"30px"}
-              _hover={{
-                color: "#000",
-                bg: "#fff",
-              }}
-            >
-              CODE
-            </Button>
-          </Link>
-          <Link>
-            <Button
-              bg={"#000"}
-              color={"#fff"}
-              fontFamily={"bungee, sans-serif"}
-              fontWeight={"400"}
-              w={"200px"}
-              h={"70px"}
-              m={"0 2px"}
-              fontSize={"30px"}
-              _hover={{
-                color: "#000",
-                bg: "#fff",
-              }}
-            >
-              TOOL
-            </Button>
-          </Link>
-          <Link>
-            <Button
-              bg={"#000"}
-              color={"#fff"}
-              fontFamily={"bungee, sans-serif"}
-              fontWeight={"400"}
-              w={"200px"}
-              h={"70px"}
-              m={"0 2px"}
-              fontSize={"30px"}
-              _hover={{
-                color: "#000",
-                bg: "#fff",
-              }}
-            >
-              SITE
-            </Button>
-          </Link>
+          <LinkButton link="code" />
+          <LinkButton link="site" />
+          <LinkButton link="tool" />
         </Box>
       </PageLayout>
     </>
