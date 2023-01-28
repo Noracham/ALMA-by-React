@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import { Header } from "@/components/header";
 import { Box, Button, Link } from "@chakra-ui/react";
 import { PageLayout } from "../components/PageLayout";
 
@@ -58,7 +57,7 @@ export default function Home() {
           m={"10% auto 0"}
           justifyContent={"space-around"}
         >
-          <Link>
+          <Link href="code">
             <Button
               bg={"#000"}
               color={"#fff"}
