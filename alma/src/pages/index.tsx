@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { Header } from "@/components/header";
-import { Box } from "@chakra-ui/react";
+import { Box, Button, Link } from "@chakra-ui/react";
 import { PageLayout } from "../components/PageLayout";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -50,6 +50,65 @@ export default function Home() {
             <span className={styles.strongtxt}>「ALMA」=「ALL MASTER」</span>
             です。
           </Box>
+        </Box>
+
+        <Box
+          display={"flex"}
+          w={"80%"}
+          m={"10% auto 0"}
+          justifyContent={"space-around"}
+        >
+          <Link>
+            <Button
+              bg={"#000"}
+              color={"#fff"}
+              fontFamily={"bungee, sans-serif"}
+              fontWeight={"400"}
+              w={"200px"}
+              h={"70px"}
+              fontSize={"30px"}
+              _hover={{
+                color: "#000",
+                bg: "#fff",
+              }}
+            >
+              CODE
+            </Button>
+          </Link>
+          <Link>
+            <Button
+              bg={"#000"}
+              color={"#fff"}
+              fontFamily={"bungee, sans-serif"}
+              fontWeight={"400"}
+              w={"200px"}
+              h={"70px"}
+              fontSize={"30px"}
+              _hover={{
+                color: "#000",
+                bg: "#fff",
+              }}
+            >
+              TOOL
+            </Button>
+          </Link>
+          <Link>
+            <Button
+              bg={"#000"}
+              color={"#fff"}
+              fontFamily={"bungee, sans-serif"}
+              fontWeight={"400"}
+              w={"200px"}
+              h={"70px"}
+              fontSize={"30px"}
+              _hover={{
+                color: "#000",
+                bg: "#fff",
+              }}
+            >
+              SITE
+            </Button>
+          </Link>
         </Box>
       </PageLayout>
     </>
