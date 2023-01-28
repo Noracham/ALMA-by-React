@@ -1,4 +1,5 @@
 import { CodeList } from "@/components/codeList";
+import { LinkButton } from "@/components/linkButtom";
 import { Box } from "@chakra-ui/react";
 import { PageLayout } from "../components/PageLayout";
 const code = () => {
@@ -77,6 +78,16 @@ const code = () => {
 @include m.mq(sp){
 }`}
           />
+        </Box>
+        <Box
+          display={"flex"}
+          w={"60%"}
+          m={"10% auto 0"}
+          justifyContent={"space-around"}
+        >
+          <LinkButton link="main" />
+          <LinkButton link="site" />
+          <LinkButton link="tool" />
         </Box>
       </PageLayout>
     </>
