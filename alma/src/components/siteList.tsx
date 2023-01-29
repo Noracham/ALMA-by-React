@@ -12,8 +12,8 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // 任意のテーマをimport
 import { okaidia } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
-export const CodeList = (props: any) => {
-  const { title, content, lang } = props;
+export const SiteList = (props: any) => {
+  const { title, goLink, siteName } = props;
   return (
     <>
       <Accordion allowToggle>
@@ -34,14 +34,7 @@ export const CodeList = (props: any) => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <SyntaxHighlighter
-              language={lang} // 表示する言語
-              style={okaidia}
-              showLineNumbers // 行番号を表示
-              customStyle={{ fontSize: "16px" }}
-            >
-              {content}
-            </SyntaxHighlighter>
+            <a href={goLink}>{siteName}</a>
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
