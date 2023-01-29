@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import {
   Accordion,
   AccordionButton,
@@ -8,9 +7,6 @@ import {
   Code,
   Box,
 } from "@chakra-ui/react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-// 任意のテーマをimport
-import { okaidia } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 export const SiteList = (props: any) => {
   const { title, goLink, siteName } = props;
